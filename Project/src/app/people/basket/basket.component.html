@@ -1,0 +1,11 @@
+<h1>
+  Twoje zakupy:
+</h1>
+
+<p *ngFor="let x of basketTab; let i = index">
+  {{x.name}} - {{x.price}}zł
+  <input type="number" value="{{x.amount}}" (input)="onInputChange($event,i,x.id,x)">
+  <button (click)="onDeleteItem(x.id)">Usuń</button>
+</p>
+
+<p><button class="buy" (click)="onBuyClick()">{{basketTab.length>0 ? 'KUP' : 'Koszyk jest pusty'}}</button></p>

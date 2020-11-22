@@ -1,0 +1,33 @@
+<div class="baner">
+<h1>Koszulki piłkarskie z najlepszych lig świata</h1>
+<button routerLink="/men">Kup teraz</button>
+</div>
+
+<section>
+  <h1>Najlepiej sprzedawane</h1>
+
+  <div class="photos">
+
+    <div style="background-image: url(/assets/photos/{{tab[10].name}}.jpg);">
+      <p>cena: <span>{{tab[10].price}}</span> <span class="waluta"> zł</span></p>
+      <button (click)="addToBasket(tab[10])" routerLink="/basket">Kup teraz</button>
+    </div>
+    <div style="background-image: url(/assets/photos/{{tab[1].name}}.jpg);">
+      <p>cena: <span>{{tab[1].price}}</span> <span class="waluta"> zł</span></p>
+      <button (click)="addToBasket(tab[1])" routerLink="/basket">Kup teraz</button>
+    </div>
+    <div style="background-image: url(/assets/photos/{{tab[6].name}}.jpg);">
+      <p>cena: <span>{{tab[6].price}}</span> <span class="waluta"> zł</span></p>
+      <button (click)="addToBasket(tab[6])" routerLink="/basket">Kup teraz</button>
+    </div>
+
+  <!-- <img src="photos/united.jpg" alt="">
+  <img src="photos/napoli.jpg" alt="">
+  <img src="photos/chelsea.jpg" alt=""> -->
+  </div>
+
+</section>
+
+<footer>
+  Koszulki dla pasjonatów &copy; Patryk Grzela
+</footer>

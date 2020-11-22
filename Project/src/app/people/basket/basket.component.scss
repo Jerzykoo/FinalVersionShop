@@ -1,0 +1,42 @@
+input{
+  width: 35px;
+  // height: 24px;
+  margin-left: 10px;
+}
+p{
+  padding-bottom: 15px;
+}
+button{
+  // height: 24px;
+  background: red;
+  border: none;
+  color: white;
+  font-size: 22px;
+  padding: 10px 7px;
+  margin-left: 5px;
+  // margin-bottom: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+p,button,input,h1{
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+p,input{
+  font-size: 30px;
+}
+p,h1{
+  text-align: center;
+}
+// button:hover{
+// color:;
+
+// }
+button.buy{
+  text-align: center;
+  background-color: blanchedalmond;
+  color: black;
+  margin: 10px auto;
+  padding: 30px 70px;
+  letter-spacing: 2px;
+}
